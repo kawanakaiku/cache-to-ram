@@ -1,0 +1,7 @@
+#change temp dir
+[HKEY_CURRENT_USER\Environment]
+"TEMP"="R:\\Temp\\User"
+"TMP"="R:\\Temp\\User"
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment]
+"TEMP"="R:\\Temp\\System"
+"TMP"="R:\\Temp\\System"
