@@ -12,6 +12,10 @@ mkdir "R:\Temp\System" "R:\Temp\User" "R:\Downloads"
 mklink /J "%USERPROFILE%\Downloads" "R:\Downloads"
 
 
+::change temp variables
+reg import temp.reg
+
+
 ::make links
 
 setlocal enabledelayedexpansion
