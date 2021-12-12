@@ -5,7 +5,7 @@
 
 CD /D "%~dp0"
 
-::make temp dirs
+::make temp dirs for temp, Downloads
 mkdir %USERPROFILE%\Documents\imdisk\Temp\System %USERPROFILE%\Documents\imdisk\Temp\User %USERPROFILE%\Documents\imdisk\Downloads
 rd /s /q "%USERPROFILE%\Downloads"
 mkdir "R:\Temp\System" "R:\Temp\User" "R:\Downloads"
@@ -15,6 +15,8 @@ mklink /J "%USERPROFILE%\Downloads" "R:\Downloads"
 ::change temp variables
 reg import temp.reg
 
+::HKEY_LOCAL_MACHINE\SOFTWARE\ImDisk
+::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ImDiskRD
 
 ::make links
 
